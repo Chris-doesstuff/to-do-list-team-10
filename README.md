@@ -1,1 +1,1 @@
-# to-do-list-team-10
+Welcome! This is my TODO list app that I am making in Python.
