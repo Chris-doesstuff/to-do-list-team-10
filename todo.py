@@ -13,20 +13,21 @@ def view_tasks():
         print(f"{i}. {task}")
 
 # Step 4: Delete a task
-def delete_tasks(location, task):
-    
+def delete_task(location, task):
+    tasks.pop(location, task)
 
 # Step 5: Mark task complete
-
+def mark_complete(location):
+    tasks[location] += " (completed)"
 
 # Step 6: Save/load tasks (extra stretch for today)
 
 
 # Demo flow (you can run this file directly: python todo.py)
-    if __name__ == "__main__":
-        add_task("Finish Cyber 201 assignment")
-        add_task("Push code to GitHub")
-        view_tasks()
-    #mark_complete(0)
-    #view_tasks()
+if __name__ == "__main__":
+    add_task("Finish Cyber 201 assignment")
+    add_task("Push code to GitHub")
+    view_tasks()
+    mark_complete(0)
+    view_tasks()
     #save_tasks()
